@@ -1,4 +1,4 @@
-# LPR381-LP-IP-Solver
+# LPR381Solver
  
 A menu-driven C# (.NET) console application, **`solve.exe`**, that solves Linear Programming (LP) and Integer Programming (IP) models from a text-based input file, displays canonical forms and full tableau/iteration output, and performs post-optimal sensitivity analysis.
 
