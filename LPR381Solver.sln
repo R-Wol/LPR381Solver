@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPR381Solver", "LPR381Solver.csproj", "{77D95E86-020A-43E3-9BD6-5A252EC6D52E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77D95E86-020A-43E3-9BD6-5A252EC6D52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D95E86-020A-43E3-9BD6-5A252EC6D52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D95E86-020A-43E3-9BD6-5A252EC6D52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D95E86-020A-43E3-9BD6-5A252EC6D52E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
