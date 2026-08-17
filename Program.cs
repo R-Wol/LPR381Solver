@@ -44,7 +44,7 @@ namespace LPR381Solver
                     case "6":
                     case "7":
                         Console.WriteLine();
-                        Console.WriteLine("This algorithm/option is not part of this build yet - coming in a later stage.");
+                        Console.WriteLine("This algorithm/option is not yet implemented");
                         Console.WriteLine();
                         break;
                     case "0":
