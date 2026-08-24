@@ -39,6 +39,8 @@ namespace LPR381Solver
                         RunPrimalSimplex();
                         break;
                     case "3":
+                        RunRevisedPrimalSimplex();
+                        break;
                     case "4":
                     case "5":
                     case "6":
@@ -72,7 +74,7 @@ namespace LPR381Solver
             }
             Console.WriteLine("1. Load input file");
             Console.WriteLine("2. Solve using Primal Simplex Algorithm");
-            Console.WriteLine("3. Solve using Revised Primal Simplex Algorithm      [coming soon]");
+            Console.WriteLine("3. Solve using Revised Primal Simplex Algorithm");
             Console.WriteLine("4. Solve using Branch & Bound Simplex Algorithm      [coming soon]");
             Console.WriteLine("5. Solve using Branch & Bound Knapsack Algorithm     [coming soon]");
             Console.WriteLine("6. Solve using Cutting Plane Algorithm               [coming soon]");
@@ -117,6 +119,38 @@ namespace LPR381Solver
             {
                 SolveResult result = PrimalSimplexSolver.Solve(currentModel);
                 string report = OutputWriter.BuildReport(currentModel, "Primal Simplex Algorithm", result);
+
+                Console.WriteLine();
+                Console.WriteLine(report);
+
+                Console.Write("Enter path to save the output report (blank = output.txt): ");
+                string outputPath = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(outputPath))
+                {
+                    outputPath = "output.txt";
+                }
+
+                OutputWriter.WriteToFile(outputPath, report);
+                Console.WriteLine("Report written to " + outputPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while solving: " + ex.Message);
+            }
+        }
+        
+        private static void RunRevisedPrimalSimplex()
+        {
+            if (currentModel == null)
+            {
+                Console.WriteLine("Please load an input file first (option 1).");
+                return;
+            }
+
+            try
+            {
+                RevisedSolveResult result = RevisedPrimalSimplexSolver.Solve(currentModel);
+                string report = OutputWriter.BuildRevisedReport(currentModel, "Revised Primal Simplex Algorithm", result);
 
                 Console.WriteLine();
                 Console.WriteLine(report);
