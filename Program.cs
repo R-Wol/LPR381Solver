@@ -40,7 +40,11 @@ namespace LPR381Solver
                         break;
                     case "3":
                     case "4":
+                        RunBranchAndBoundSimplex();
+                        break;
                     case "5":
+                        RunKnapsackBranchAndBound();
+                        break;
                     case "6":
                     case "7":
                         Console.WriteLine();
@@ -73,8 +77,8 @@ namespace LPR381Solver
             Console.WriteLine("1. Load input file");
             Console.WriteLine("2. Solve using Primal Simplex Algorithm");
             Console.WriteLine("3. Solve using Revised Primal Simplex Algorithm      [coming soon]");
-            Console.WriteLine("4. Solve using Branch & Bound Simplex Algorithm      [coming soon]");
-            Console.WriteLine("5. Solve using Branch & Bound Knapsack Algorithm     [coming soon]");
+            Console.WriteLine("4. Solve using Branch & Bound Simplex Algorithm");
+            Console.WriteLine("5. Solve using Branch & Bound Knapsack Algorithm");
             Console.WriteLine("6. Solve using Cutting Plane Algorithm               [coming soon]");
             Console.WriteLine("7. Sensitivity Analysis                              [coming soon]");
             Console.WriteLine("0. Exit");
@@ -134,6 +138,63 @@ namespace LPR381Solver
             catch (Exception ex)
             {
                 Console.WriteLine("An error occurred while solving: " + ex.Message);
+            }
+        }
+
+        private static void RunKnapsackBranchAndBound() {
+            if (currentModel == null)
+            {
+                Console.WriteLine("Please load an input file first (option 1).");
+                return;
+            }
+
+            try
+            {
+                KnapsackSolveResult result = KnapsackBranchAndBoundSolver.Solve(currentModel);
+                string report = KnapsackOutputWriter.BuildReport(currentModel, result);
+
+                Console.WriteLine();
+                Console.WriteLine(report);
+
+                Console.Write("Enter path to save the output report (blank = output.txt): ");
+                string outputPath = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(outputPath)) outputPath = "output.txt";
+
+                KnapsackOutputWriter.WriteToFile(outputPath, report);
+                Console.WriteLine("Report written to " + outputPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while solving: " + ex.Message);
+            }
+        }
+        private static void RunBranchAndBoundSimplex() 
+        {
+            if (currentModel == null) { Console.WriteLine("Please load an input file first (Option 1)");return; }
+            try
+            {
+                BranchAndBoundSolveResult result = BranchAndBoundSimplexSolver.Solve(currentModel);
+                string report  = BranchAndBoundOutputWriter.BuildReport(currentModel, result);
+
+                Console.WriteLine();
+                Console.WriteLine(report);
+
+                Console.Write("Enter path to save the output report (blank = output.txt): ");
+                string outputPath = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(outputPath)) 
+                {
+                    outputPath = "output.txt";
+                }
+
+                BranchAndBoundOutputWriter.WriteToFile(outputPath, report);
+                Console.WriteLine("Report written to " + outputPath);
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occured while solving: " + ex.Message);
             }
         }
     }

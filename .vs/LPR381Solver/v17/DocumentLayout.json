@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\sampleinput\\knapsack.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:sampleinput\\knapsack.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\io\\outputwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:io\\outputwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\primalsimplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\primalsimplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\knapsackbranchandboundsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\knapsackbranchandboundsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\knapsacksolveresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\knapsacksolveresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\knapsacknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\knapsacknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\knapsackitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\knapsackitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\models\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:models\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\workingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\workingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\io\\knapsackoutputwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:io\\knapsackoutputwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\branchandboundnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\branchandboundnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\branchandboundsolveresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\branchandboundsolveresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\branchandboundsimplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\branchandboundsimplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\io\\branchandboundoutputwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:io\\branchandboundoutputwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\lpr381solver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:lpr381solver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\core\\standardformbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:core\\standardformbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|c:\\users\\viljo\\source\\repos\\lpr381solver\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D95E86-020A-43E3-9BD6-5A252EC6D52E}|LPR381Solver.csproj|solutionrelative:models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 23,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BranchAndBoundOutputWriter.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\IO\\BranchAndBoundOutputWriter.cs",
+              "RelativeDocumentMoniker": "IO\\BranchAndBoundOutputWriter.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\IO\\BranchAndBoundOutputWriter.cs",
+              "RelativeToolTip": "IO\\BranchAndBoundOutputWriter.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAUwIQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T16:32:36.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BranchAndBoundSimplexSolver.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\BranchAndBoundSimplexSolver.cs",
+              "RelativeDocumentMoniker": "Core\\BranchAndBoundSimplexSolver.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\BranchAndBoundSimplexSolver.cs",
+              "RelativeToolTip": "Core\\BranchAndBoundSimplexSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T16:31:31.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BranchAndBoundSolveResult.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\BranchAndBoundSolveResult.cs",
+              "RelativeDocumentMoniker": "Core\\BranchAndBoundSolveResult.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\BranchAndBoundSolveResult.cs",
+              "RelativeToolTip": "Core\\BranchAndBoundSolveResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T16:31:10.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BranchAndBoundNode.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\BranchAndBoundNode.cs",
+              "RelativeDocumentMoniker": "Core\\BranchAndBoundNode.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\BranchAndBoundNode.cs",
+              "RelativeToolTip": "Core\\BranchAndBoundNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T16:30:47.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KnapsackOutputWriter.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\IO\\KnapsackOutputWriter.cs",
+              "RelativeDocumentMoniker": "IO\\KnapsackOutputWriter.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\IO\\KnapsackOutputWriter.cs",
+              "RelativeToolTip": "IO\\KnapsackOutputWriter.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAqwIwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T14:47:49.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LPR381Solver",
+              "DocumentMoniker": "C:\\Users\\viljo\\Source\\Repos\\LPR381Solver\\LPR381Solver.csproj",
+              "RelativeDocumentMoniker": "LPR381Solver.csproj",
+              "ToolTip": "C:\\Users\\viljo\\Source\\Repos\\LPR381Solver\\LPR381Solver.csproj",
+              "RelativeToolTip": "LPR381Solver.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-23T20:35:15.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KnapsackBranchAndBoundSolver.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackBranchAndBoundSolver.cs",
+              "RelativeDocumentMoniker": "Core\\KnapsackBranchAndBoundSolver.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackBranchAndBoundSolver.cs",
+              "RelativeToolTip": "Core\\KnapsackBranchAndBoundSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-23T20:31:36.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KnapsackSolveResult.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackSolveResult.cs",
+              "RelativeDocumentMoniker": "Core\\KnapsackSolveResult.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackSolveResult.cs",
+              "RelativeToolTip": "Core\\KnapsackSolveResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-23T17:15:30.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KnapsackNode.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackNode.cs",
+              "RelativeDocumentMoniker": "Core\\KnapsackNode.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackNode.cs",
+              "RelativeToolTip": "Core\\KnapsackNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-23T13:05:46.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KnapsackItem.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackItem.cs",
+              "RelativeDocumentMoniker": "Core\\KnapsackItem.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\KnapsackItem.cs",
+              "RelativeToolTip": "Core\\KnapsackItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-23T12:58:12.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Constraint.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Models\\Constraint.cs",
+              "RelativeDocumentMoniker": "Models\\Constraint.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Models\\Constraint.cs",
+              "RelativeToolTip": "Models\\Constraint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T22:08:54.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WorkingModel.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\WorkingModel.cs",
+              "RelativeDocumentMoniker": "Core\\WorkingModel.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\WorkingModel.cs",
+              "RelativeToolTip": "Core\\WorkingModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T22:05:45.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StandardFormBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\StandardFormBuilder.cs",
+              "RelativeDocumentMoniker": "Core\\StandardFormBuilder.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\StandardFormBuilder.cs",
+              "RelativeToolTip": "Core\\StandardFormBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T22:05:30.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PrimalSimplexSolver.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\PrimalSimplexSolver.cs",
+              "RelativeDocumentMoniker": "Core\\PrimalSimplexSolver.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Core\\PrimalSimplexSolver.cs",
+              "RelativeToolTip": "Core\\PrimalSimplexSolver.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T21:54:08.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OutputWriter.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\IO\\OutputWriter.cs",
+              "RelativeDocumentMoniker": "IO\\OutputWriter.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\IO\\OutputWriter.cs",
+              "RelativeToolTip": "IO\\OutputWriter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T21:51:56.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwCQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T21:42:18.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "knapsack.txt",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\SampleInput\\knapsack.txt",
+              "RelativeDocumentMoniker": "SampleInput\\knapsack.txt",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\SampleInput\\knapsack.txt",
+              "RelativeToolTip": "SampleInput\\knapsack.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-08-18T21:41:48.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "Models\\Enums.cs",
+              "ToolTip": "C:\\Users\\viljo\\source\\repos\\LPR381Solver\\Models\\Enums.cs",
+              "RelativeToolTip": "Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T21:41:24.156Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
