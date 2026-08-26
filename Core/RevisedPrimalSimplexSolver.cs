@@ -18,6 +18,11 @@ public static class RevisedPrimalSimplexSolver
     public static RevisedSolveResult Solve(LPModel model)
     {
         WorkingModel workingModel = StandardFormBuilder.BuildWorkingModel(model);
+        return SolveWorkingModel(workingModel, model.VariableCount);
+    }
+
+    public static RevisedSolveResult SolveWorkingModel(WorkingModel workingModel, int originalVariableCount)
+    {
         SimplexTableau initial = StandardFormBuilder.BuildInitialTableau(workingModel);
 
         int m = initial.RowCount;
@@ -166,8 +171,8 @@ public static class RevisedPrimalSimplexSolver
             }
         }
 
-        double[] originalValues = new double[model.VariableCount];
-        for (int i = 0; i < model.VariableCount; i++)
+        double[] originalValues = new double[originalVariableCount];
+        for (int i = 0; i < originalVariableCount; i++)
         {
             originalValues[i] = workingModel.OriginalVariableMappings[i].ResolveValue(workingValues);
         }
