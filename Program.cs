@@ -48,6 +48,8 @@ namespace LPR381Solver
                         RunKnapsackBranchAndBound();
                         break;
                     case "6":
+                        RunCuttingPlane();
+                        break;
                     case "7":
                         Console.WriteLine();
                         Console.WriteLine("This algorithm/option is not yet implemented");
@@ -81,7 +83,7 @@ namespace LPR381Solver
             Console.WriteLine("3. Solve using Revised Primal Simplex Algorithm");
             Console.WriteLine("4. Solve using Branch & Bound Simplex Algorithm");
             Console.WriteLine("5. Solve using Branch & Bound Knapsack Algorithm");
-            Console.WriteLine("6. Solve using Cutting Plane Algorithm               [coming soon]");
+            Console.WriteLine("6. Solve using Cutting Plane Algorithm");
             Console.WriteLine("7. Sensitivity Analysis                              [coming soon]");
             Console.WriteLine("0. Exit");
             Console.Write("Select an option: ");
@@ -229,6 +231,38 @@ namespace LPR381Solver
             catch (Exception ex)
             {
                 Console.WriteLine("An error occured while solving: " + ex.Message);
+            }
+        }
+
+        private static void RunCuttingPlane()
+        {
+            if (currentModel == null)
+            {
+                Console.WriteLine("Please load an input file first (option 1).");
+                return;
+            }
+
+            try
+            {
+                CuttingPlaneResult result = CuttingPlaneSolver.Solve(currentModel);
+                string report = OutputWriter.BuildCuttingPlaneReport(currentModel, algorithmName:"Cutting Plane Algorithm", result);
+                
+                Console.WriteLine();
+                Console.WriteLine(report);
+
+                Console.Write("Enter path to save the output report (blank = output.txt): ");
+                string outputPath = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(outputPath))
+                {
+                    outputPath = "output.txt";
+                }
+                
+                OutputWriter.WriteToFile(outputPath, report);
+                Console.WriteLine("Report written to " + outputPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while solving: " + ex.Message);
             }
         }
     }

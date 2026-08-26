@@ -150,6 +150,105 @@ namespace LPR381Solver.IO
 
             return sb.ToString();
         }
+        
+        public static string BuildCuttingPlaneReport(LPModel model, string algorithmName, CuttingPlaneResult result)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("==============================================").Append("\n");
+            sb.Append(" LPR381 Programming Solver - Output Report").Append("\n");
+            sb.Append(" Algorithm: ").Append(algorithmName).Append("\n");
+            sb.Append("==============================================").Append("\n\n");
+
+            sb.Append("Original Model:").Append("\n");
+            sb.Append(DescribeModel(model)).Append("\n");
+
+            for (int idx = 0; idx < result.Rounds.Count; idx++)
+            {
+                CuttingPlaneRound round = result.Rounds[idx];
+                sb.Append("############################################").Append("\n");
+                sb.Append("# Cut Round ").Append(round.RoundNumber)
+                  .Append(round.RoundNumber == 0 ? " (original Canonical Form, no cuts yet)" : " (with all cuts added so far)")
+                  .Append("\n");
+                sb.Append("############################################").Append("\n\n");
+
+                string[] colNames = round.Relaxation.ColumnNames;
+                for (int i = 0; i < round.Relaxation.Iterations.Count; i++)
+                {
+                    RevisedIteration it = round.Relaxation.Iterations[i];
+                    sb.Append("--- Iteration ").Append(it.IterationNumber).Append(" ---").Append("\n");
+                    sb.Append("Basis: ");
+                    for (int b = 0; b < it.Basis.Length; b++)
+                    {
+                        sb.Append(colNames[it.Basis[b]]).Append(" ");
+                    }
+                    sb.Append("\n");
+                    sb.Append("B^-1 (Product Form of the Inverse):").Append("\n");
+                    sb.Append(FormatMatrix(it.BasisInverse)).Append("\n");
+                    sb.Append("xB = B^-1 . b: ").Append(FormatVector(it.XB)).Append("\n");
+                    sb.Append("y = cB^T . B^-1 (Price Out vector): ").Append(FormatVector(it.Y)).Append("\n");
+                    if (it.EnteringColumn == -1)
+                    {
+                        sb.Append("Optimal for this round - no entering column improves the objective.").Append("\n\n");
+                    }
+                    else
+                    {
+                        sb.Append("Entering column: ").Append(colNames[it.EnteringColumn]).Append("\n\n");
+                    }
+                }
+
+                if (round.Relaxation.Status != SolveStatus.Optimal)
+                {
+                    sb.Append("This round's relaxation is ").Append(round.Relaxation.Status).Append(".").Append("\n\n");
+                    continue;
+                }
+
+                sb.Append("Relaxation objective: ").Append(Round3(round.Relaxation.ObjectiveValue)).Append("\n");
+                sb.Append("Relaxation solution: ");
+                for (int i = 0; i < round.Relaxation.OriginalVariableValues.Length; i++)
+                {
+                    sb.Append("x").Append(i + 1).Append("=").Append(Round3(round.Relaxation.OriginalVariableValues[i])).Append(" ");
+                }
+                sb.Append("\n");
+
+                if (round.IsIntegerFeasible)
+                {
+                    sb.Append("-> INTEGER FEASIBLE. Stopping - this is the optimal solution.").Append("\n\n");
+                }
+                else
+                {
+                    sb.Append("-> x").Append(round.FractionalVariableIndex + 1).Append(" is fractional. Deriving a Gomory cut").Append("\n");
+                    sb.Append("New cut (in working-variable space): ").Append(FormatVector(round.CutCoefficients))
+                      .Append(" . w >= ").Append(Round3(round.CutRhs)).Append("\n\n");
+                }
+            }
+
+            sb.Append("Result:").Append("\n");
+            if (result.CutLimitReached)
+            {
+                sb.Append("Status: DID NOT CONVERGE within the cut limit for this build. ")
+                  .Append("This is a safety cap, not expected for problems of this project's scale.").Append("\n");
+            }
+            else if (result.Status == SolveStatus.Optimal)
+            {
+                sb.Append("Status: Optimal").Append("\n");
+                sb.Append("Objective value: ").Append(Round3(result.ObjectiveValue)).Append("\n");
+                for (int i = 0; i < result.OriginalVariableValues.Length; i++)
+                {
+                    sb.Append("x").Append(i + 1).Append(" = ").Append(Round3(result.OriginalVariableValues[i])).Append("\n");
+                }
+            }
+            else if (result.Status == SolveStatus.Infeasible)
+            {
+                sb.Append("Status: INFEASIBLE - no integer-feasible solution exists.").Append("\n");
+            }
+            else if (result.Status == SolveStatus.Unbounded)
+            {
+                sb.Append("Status: UNBOUNDED - the objective can be improved without limit.").Append("\n");
+            }
+
+            return sb.ToString();
+        }
 
         private static string FormatVector(double[] values)
         {
